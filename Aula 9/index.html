@@ -67,15 +67,64 @@
                     <input type="radio" id="opçao" name="opçao" value="acadêmico">Acadêmico
                     <br>
                 </td>
+            </tr>
+            <td>
+                    <label for="">Esporte favorito:</label>
+                    <select name="esportes" id="esportes" size="4">
+                        <option value="futebol">Futebol</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="vôlei">Vôlei</option>
+                        <option value="tênis">Tênis</option>
+                        <option value="">Selecione</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="">Investimentos</label>
+                    <select name="investimentos" id="investimentos" size="1">
 
+                        <optgroup label="Alto Risco">
+                            <option value="investimento_1">Poupança</option>
+                            <option value="investimento_2">CDB</option>
+                            <option value="investimento_3">Tesouro Direto</option>
+                        </optgroup>
 
+                        <optgroup label="Médio Risco">
+                            <option value="investimento_4">Fundos Imobiliários</option>
+                            <option value="investimento_5">CDI</option>
+                            <option value="investimento_6">Debêntures</option>
+                        </optgroup>
+
+                        <optgroup label="Baixo Risco">
+                            <option value="investimento_7">Criptomoedas</option>
+                            <option value="investimento_8">Ações</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Data e Hora envio: 
+                    <input type="datetime-local" name="dtl" id="dtl">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                </td>
+                <td>
+                    <input type="reset" value="Limpar">
+                </td>
             </tr>
         </tbody>
-
     </table>
     </form>
-
-
     
 </body>
 </html>
