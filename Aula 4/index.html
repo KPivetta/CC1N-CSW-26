@@ -4,55 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aula 4</title>
 </head>
+     <h1>Principais formatações</h1>
 
+    <h2>Negrito / Destaque</h2>
+    <p>Na frase temos <b>parte do texto em negrito</b> usando a tag B (não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (com semântica)</p>
+    
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
+    <p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica)</p>
+    
+    <h2>Texto Marcador</h2>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: green;">de macador de texto</mark> de macador de texto usando mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color: yellow;">de macador de texto</mark> de macador de texto usando mark</p>
 
-<body>
-    <p>Inserindo o comando <code>docuement</code></p>
+    <h2>Text grande e pequeno</h2>
+    <p>Estamos trabalhando aqui com um <big>texto pequeno</big> e um <small>texto pequeno</small> nessa formatações.</p>
 
+    <h2>Texto deletado</h2>
+    <p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluido</del> da frase (forma semântica).</p>
+
+    <h2>Texto inserido</h2>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserindo</ins> na frase de forma semântica.</p>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserindo</u> na frase de forma não semântica.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Vamos demonstrar uma fôrmula da equação do segundo grau ax<sup>2</sup> + bx + c = 0.</p>
+
+    <h2>Texto subescrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a fôrmula de agua H<sub>2</sub>O.</p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>Neste exemplo vou demonstrar um trecho de código inserindo o comando "code" e "pre".</p>
+    <p>Inserindo um código python de uma linha: <code>import math</code>.</p>
+    <p>Inserindo um longo código em python:</p>
     <pre>
-        <code>
-         function calcularEquacaoSegundoGrau(a, b, c) {
-    if (a === 0) {
-        console.log("Não é uma equação do segundo grau.");
-        return;
-    }
+def integral_trapezio(f, a, b, n=1000):
+    h = (b - a) / n
+    soma = 0.5 * (f(a) + f(b))
+    
+    for i in range(1, n):
+        soma += f(a + i * h)
+    
+    return soma * h
 
-    let delta = (b * b) - (4 * a * c);
+# Exemplo: ∫ de 0 a 2 de x²
+f = lambda x: x**2
 
-    if (delta < 0) {
-        console.log("A equação não possui raízes reais.");
-    } else if (delta === 0) {
-        let x = -b / (2 * a);
-        console.log("A equação possui uma raiz real:");
-        console.log("x =", x);
-    } else {
-        let x1 = (-b + Math.sqrt(delta)) / (2 * a);
-        let x2 = (-b - Math.sqrt(delta)) / (2 * a);
-
-        console.log("A equação possui duas raízes reais:");
-        console.log("x1 =", x1);
-        console.log("x2 =", x2);
-    }
-}
-
-// Exemplo de uso
-calcularEquacaoSegundoGrau(1, -3, 2);
-        </code>
+resultado = integral_trapezio(f, 0, 2)
+print("Resultado aproximado:", resultado)
     </pre>
 
+    <h2>Citações (quotation) simples</h2>
+    <p>Segundo Steve Jobs <quotation>A tecnologia move o mundo</quotation>.</p>
+
+    <h2>Citações compoletas (livros)</h2>
+    <p>Segundo Tolkien em seu livro O Senhor dos Anéis:</p>
+    <blockquote>
+        <p>Muitos que vivem merecem a morte. E alguns que morrem merecem viver. Você pode dar-lhes a vida? Então não seja tão ávido para julgar e condenar alguém a morte. Pois mesmo os muitos sábios não conseguem ver os dois lados.</p>
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">Estou estudando HTML</bdo>.</p>
+    <p><bdo dir="rtl">Estou estudando HTML</bdo>.</p>
 </body>
-
-</html>
-
-<blockquote
-    cite="...">
-</blockquote>
-
-<blockquote>
-    <abbr title="HiperText Markup Language">HTML</abbr>
-
-</blockquote>
     
-    <bdo dir="rtl"></bdo>
+</html>
