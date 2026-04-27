@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+    background-image: linear-gradient(to right,rgba(128, 0, 179, 0.637), black);
+    font-family:'Times New Roman', Times, serif
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+#box{
+    background-color:rgb(74, 7, 233);
+    padding: 10px;
+    margin: auto;
+    border-radius: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2:hover{
+    text-align: center;
+    color: rgb(253, 253, 253);
+
+}
