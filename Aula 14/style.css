@@ -5,6 +5,16 @@ body {
 }
 
 
+.bloco1 {
+    background-color: aliceblue;
+}
+
+
+.bloco2 {
+    background-color: blue;
+}
+
+
 p {
     color: black;
     text-align: center;
