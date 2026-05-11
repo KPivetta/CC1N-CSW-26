@@ -4,16 +4,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
-    padding: 20px;
-    background-color: aliceblue;
-    border-radius: 50px;
-    width: 300px;
-    align-items: center;
-    align-content: center;
-}
 
-h1 {
+p {
     color: black;
     text-align: center;
 }
